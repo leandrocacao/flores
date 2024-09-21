@@ -22,6 +22,13 @@ body {
     
 }
 
+html, body {
+    height: 100%; /* Asegúrate de que el body ocupa toda la altura */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evitar el desplazamiento */
+}
+
 #text {
     position: absolute;
     left: 10px;
@@ -33,44 +40,7 @@ body {
     font-weight: 500;
 }
 
-
-
-
-html, body {
-    height: 100%; /* Asegúrate de que el body ocupa toda la altura */
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Evitar el desplazamiento */
-}
-
-.sunflower {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-}
-
-.flower_wrapper {
-    position: relative;
-    width: 100%; /* Ajusta el ancho para móviles */
-    max-width: 400px; /* Opcional: límite máximo para una mejor visualización */
-    margin: auto; /* Centra el contenido */
-}
-
-.light {
-    position: absolute;
-    /* Ajusta las propiedades de las luces según sea necesario */
-}
-
-/* Ajustes adicionales si tienes más elementos que desees fijar */
-
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     body {
         align-items: center;
     }
